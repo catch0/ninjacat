@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" type = "text/css" href="ninjacat.css">
+    <title>NinjaCat</title>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script>
+        // HTML should contain the information, CSS the looks and JS the behavior
+       $(document).ready(function(){
+           $('img').click(function(){
+               var get = $(this).attr('ninja');
+               var cat = $(this).attr('src');
+               $(this).attr('src', get);
+               $(this).attr('ninja',cat);
+           });
+       });
+        
+    </script>
+    <body>
+        <img src="cat0.png" ninja="ninja0.png">
+        <img src="cat1.png" ninja="ninja1.png">
+        <img src="cat2.png" ninja="ninja2.png">
+        <img src="cat3.png" ninja="ninja3.png">
+        <img src="cat4.png" ninja="ninja4.png">
+
+
+    </body>
+</html>
